@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Ticket</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    .font-raleway{
+    font-family: "Raleway", sans-serif;
+  }
+  .shadow-box{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+    </style>
+
+
+</head>
+<body class=" font-raleway">
+    <header class="p-16 font-raleway">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+               
+              </div>
+              <a class="btn btn-ghost text-3xl font-bold "> Easy-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                 
+                    <summary>About</summary>
+                   
+                 
+                </li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-zinc-300"><span><img src="images/bus-icon.png" alt=""></span> Bus</a>
+            </div>
+          </div>
+          <section id="home-screen" class="mt-10">
+            <div
+  class="hero min-h-screen "
+  style="background-image: url(images/banner.png);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <br> <span class="text-black">P Paribahan</span></h1>
+      <p class="mb-5">
+        Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+      </p>
+      <button onclick="started()" class="btn btn-primary bg-orange-700">Get Started</button>
+    </div>
+  </div>
+</div>
+ <div class="flex gap-10 rounded-full p-4 justify-center  ">
+    <div class="flex gap-5 mt-3 shadow-box w-60 h-24 text-center ">
+        <img   src="images/people.png" alt="">
+        <div class="pt-3">
+            <h1 class="font-bold text-3xl">500K+</h1>
+        <p>Registered users</p>
+        </div>
+     </div>
+    <div class="flex gap-5 mt-3 shadow-box w-60 h-24">
+        <img src="images/ticket-cupon.png" alt="">
+        <div class="pt-3">
+            <h1 class="font-bold text-3xl">1.7 lacks</h1>
+        <p>Tickets sold</p>
+        </div>
+     </div>
+    <div class="flex gap-5 mt-3 shadow-box w-60 h-24">
+        <img src="images/stoppage.png" alt="">
+        <div class="pt-3">
+            <h1 class="font-bold text-3xl">80K+</h1>
+        <p>Rental partners</p>
+        </div>
+     </div>
+ </div>
+          </section>
+    </header>
+    <main class="p-16 font-raleway">
+        <h1 class="font-extrabold text-4xl mt-20 text-center">Best offers for you</h1>
+        <section id="offer-section" class="flex mt-10  ">
+            
+            <div class="image-container bg-no-repeat h-[210px] w-full ml-28   " style="background-image: url('images/Group 115.png') ;">
+              <div class="flex w-[570px] ">
+                <div class="text-overlay w-2/4 p-8 space-y-4">
+                    <h2 class="font-extrabold text-4xl"> 15% OFF</h2>
+                    <p class="font-semibold ">Up to 50% off on selected items</p>
+                    <p class=" text-slate-5 ">use by January 2024</p>
+                </div>
+                <div class="text-overlay w-2/4 p-8 pl-24 pt-20">
+                    <h2 class="font-extrabold text-4xl">NEW15</h2>
+                    <p>Coupon Code</p>
+                </div>
+              </div>
+            </div>
+            <div class="image-container bg-no-repeat h-[210px] w-full mr-10 " style="background-image: url('images/Rectangle\ 8.png') ;">
+              <div class="flex w-[570px]  ">
+                <div class="text-overlay w-2/4 p-8 space-y-4">
+                    <h2 class="font-extrabold text-4xl"> 15% OFF</h2>
+                    <p class="font-semibold">Up to 50% off on selected items</p>
+                    <p class=" text-slate-5 ">use by January 2024</p>
+                </div>
+                <div class="text-overlay w-2/4 p-8 pl-24 pt-20">
+                    <h2 class="font-extrabold text-4xl">NEW15</h2>
+                    <p>Coupon Code</p>
+                </div>
+              </div>
+            </div>
+           
+        </section>
+        <button class="btn btn-outline mt-20 font-bold text-black ml-[690px]">See All Offers</button>
+        <section  class="mt-14 ">
+            <h1 class="font-bold text-3xl text-center">P.H Paribahan</h1>
+            <p class=" text-center">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+
+           <div class="flex gap-40  ml-48 mt-16">
+            <div class="flex gap-3">
+                <img src="images/bus-logo.png" alt="">
+                <div>
+                    <h2 class="font-bold text-2xl">Greenline Paribahan</h2> 
+                    <p>Coach-009-WEB ! AC_Business</p> 
+                </div>
+            </div>
+           <div >
+           
+            <button  class="btn" > <img src="images/seat-green.png" alt=""> <span  id="seat-left"  class="bg-gray-600 text-2xl rounded-lg text-white p-2">40</span> Seats left</button>
+                 </div>
+                
+           </div>
+
+          <div class="flex gap-10">
+            <div class="w-3/4  ">
+                <div class="flex gap-80 ml-80 mt-20 bg-[#F7F8F8] w-fit h-10 p-2">
+                    <p>Route</p>
+                    <p class="font-semibold ">Dhaka - Sylhet</p>
+                 </div>
+                 <hr>
+                   <div class="flex gap-72 ml-80 mt-10  bg-[#F7F8F8] w-fit h-10 p-2">
+                    <p>Departure Time</p>
+                    <p class="font-semibold">9:00 PM</p>
+                 </div>
+                 <hr>
+        
+                 <div class="space-x-10 ml-64 mt-10  bg-[#F7F8F8] w-fit h-10 p-2">
+                    <button  class="btn" >Boarding Point - Laxmipur</button>
+                    <button  class="btn" >Dropping Point - Bogura</button>
+                    <button  class="btn" >Est. Time - 11 Hour</button>
+                 </div>
+              </div>
+    
+              <div class="mt-10 space-y-5">
+                <img src="images/fare.png" alt="">
+                <h2 class="font-semibold text-3xl"><span>550</span>Tk </h2>
+                <p class="font-medium">Per Seat</p>
+              </div>
+          </div>
+
+          
+                     
+        
+        </section>
+
+        <section id="ticket-section" class="">
+           <div class="flex gap-80 ml-80">
+            
+            <h3 class="font-bold text-2xl mt-20 text-center ">Select Your Seat</h3>
+            <h3 class="font-bold text-2xl mt-20 text-center ">Select Your Seat</h3>
+           </div>
+        <div class="flex gap-60 mt-20 ml-72">
+           <div class="flex gap-3">
+            <span><img src="images/seat-gray.png" alt=""></span>
+            <p class="font-medium"> Available</p>
+           </div>
+           <div class="flex gap-3">
+            <img src="images/seat-green-filled.png" alt="">
+            <p class="text-[#1DD100] font-medium text-green-900">Selected</p>
+           </div>
+            </div>
+           
+            <div class="space-y-6 mt-16 ml-72 ">
+
+              <button class="btn w-24 ml-96"><span><img src="images/wheel.png" alt=""></span></button>
+          
+              <div class="flex ">
+
+                <div class="space-y-8 ">
+                    <div class="flex gap-5 items-center ">
+                        <p>A</p>
+                        <button id="A1" class="button btn w-24" onclick="changeBackgroundColor('A1')">A1</button>
+                        <button id="A2" class="button btn w-24" onclick="changeBackgroundColor('A2')">A2</button>
+                        <button id="A3" class="button btn w-24" onclick="changeBackgroundColor('A3')">A3</button>
+                        <button id="A4" class="button btn w-24" onclick="changeBackgroundColor('A4')">A4</button>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                      <p>B</p>
+                      <button id="B1" class="button  btn w-24" onclick="changeBackgroundColor('B1')">B1</button>
+                      <button id="B2" class="button btn w-24" onclick="changeBackgroundColor('B2')">B2</button>
+                      <button id="B3" class="button btn w-24" onclick="changeBackgroundColor('B3')">B3</button>
+                      <button id="B4" class="button btn w-24" onclick="changeBackgroundColor('B4')">B4</button>
+                  </div>
+                  <div class="flex gap-5 items-center">
+                    <p>C</p>
+                    <button id="C1" class="button btn w-24" onclick="changeBackgroundColor('C1')">C1</button>
+                    <button id="C2" class="button btn w-24" onclick="changeBackgroundColor('C2')">C2</button>
+                    <button id="C3" class="button btn w-24" onclick="changeBackgroundColor('C3')">C3</button>
+                    <button id="C4" class="button btn w-24" onclick="changeBackgroundColor('C4')">C4</button>
+                </div>
+                <div class="flex gap-5 items-center">
+                  <p>D</p>
+                  <button id="D1" class="button btn w-24" onclick="changeBackgroundColor('D1')">D1</button>
+                  <button id="D2" class="button btn w-24" onclick="changeBackgroundColor('D2')">D2</button>
+                  <button id="D3" class="button btn w-24" onclick="changeBackgroundColor('D3')">D3</button>
+                  <button id="D4" class="button btn w-24" onclick="changeBackgroundColor('D4')">D4</button>
+              </div>
+              <div class="flex gap-5 items-center">
+                <p>E</p>
+                <button id="E1" class="button btn w-24" onclick="changeBackgroundColor('E1')">E1</button>
+                <button id="E2" class="button btn w-24" onclick="changeBackgroundColor('E2')">E2</button>
+                <button id="E3" class="button btn w-24" onclick="changeBackgroundColor('E3')">E3</button>
+                <button id="E4" class="button btn w-24" onclick="changeBackgroundColor('E4')">E4</button>
+            </div>
+            <div class="flex gap-5 items-center">
+              <p>F</p>
+              <button id="F1" class="button btn w-24" onclick="changeBackgroundColor('F1')">F1</button>
+              <button id="F2" class="button btn w-24" onclick="changeBackgroundColor('F2')">F2</button>
+              <button id="F3" class="button btn w-24" onclick="changeBackgroundColor('F3')">F3</button>
+              <button id="F4" class="button btn w-24" onclick="changeBackgroundColor('F4')">F4</button>
+          </div>
+          <div class="flex gap-5 items-center">
+            <p>G</p>
+            <button id="G1" class="button btn w-24" onclick="changeBackgroundColor('G1')">G1</button>
+            <button id="G2" class="button btn w-24" onclick="changeBackgroundColor('G2')">G2</button>
+            <button id="G3" class="button btn w-24" onclick="changeBackgroundColor('G3')">G3</button>
+            <button id="G4" class="button btn w-24" onclick="changeBackgroundColor('G4')">G4</button>
+        </div>
+        <div class="flex gap-5 items-center">
+          <p>H</p>
+          <button id="H1" class="button btn w-24" onclick="changeBackgroundColor('H1')">H1</button>
+          <button id="H2" class="button btn w-24" onclick="changeBackgroundColor('H2')">H2</button>
+          <button id="H3" class="button btn w-24" onclick="changeBackgroundColor('H3')">H3</button>
+          <button id="H4" class="button btn w-24" onclick="changeBackgroundColor('H4')">H4</button>
+      </div>
+      <div class="flex gap-5 items-center">
+        <p>I</p>
+        <button id="I1" class="button btn w-24" onclick="changeBackgroundColor('I1')">I1</button>
+        <button id="I2" class="button btn w-24" onclick="changeBackgroundColor('I2')">I2</button>
+        <button id="I3" class="button btn w-24" onclick="changeBackgroundColor('I3')">I3</button>
+        <button id="I4" class="button btn w-24" onclick="changeBackgroundColor('I4')">I4</button>
+    </div>
+    <div class="flex gap-5 items-center">
+      <p>J</p>
+      <button id="J1" class="button btn w-24" onclick="changeBackgroundColor('J1')">J1</button>
+      <button id="J2" class="button btn w-24" onclick="changeBackgroundColor('J2')">J2</button>
+      <button id="J3" class="button btn w-24" onclick="changeBackgroundColor('J3')">J3</button>
+      <button id="J4" class="button btn w-24" onclick="changeBackgroundColor('J4')">J4</button>
+  </div>
+                    
+        
+                    </div>
+                      
+                  <div class="flex flex-col">
+
+
+                    <div class="flex  gap-10 ml-40 pl-10 bg-[#F7F8F8] h-[250px] p-5 rounded-xl ">
+                        <div class="space-y-8">
+                            <p class="font-semibold">Seat <span id="seat-count" class="bg-slate-600 w-8 rounded-2xl text-2xl text-white">0</span></p>
+                            <p id="seat-booking-one">C2</p>
+                            <p id="seat-booking-two">C2</p>
+                            <hr>
+                            <p class="font-semibold">Total Price</p>
+                        </div>
+                        <div class="space-y-8">
+                            <p class="font-semibold">Class</p>
+                            <p>Economoy</p>
+                            <p>Economoy</p>
+                          
+                        </div>
+                        <div class="space-y-8">
+                            <p class="font-semibold">Price</p>
+                            <p>550</p>
+                            <p>550</p>
+                            <hr>
+                            <p class="font-semibold">BDT <span id="total-price">00</span></p>
+                        </div>
+                       
+                    </div>
+                   <div class="ml-48 mt-10 bg-[#F7F8F8]">
+                    <input id="cupon-input" type="text" class="h-12 w-[320px]"  placeholder="Have any copupon?"/>
+                    <button id="apply-button" class=" btn btn-primary  " disabled>Apply</button>
+                   </div>
+                  <div class="flex gap-52 ml-48 mt-10">
+                    <h4  class="font-semibold">Grand Total</h4>
+                    <p class="font-semibold">BDT <span id="grand-total">00</span></p>
+ 
+                  </div>
+                   <div class="w-[430px] space-y-5 ml-44 mt-10">
+                    <label class="input input-bordered flex items-center gap-2 font-bold">
+                        Name
+                        <input type="text" class="grow" placeholder="" />
+                      </label>
+                      <label class="input input-bordered flex items-center gap-2 font-bold">
+                        Phon Number
+                        <input type="text" class="grow" placeholder="" />
+                      </label>
+                     
+                      <label class="input input-bordered flex items-center gap-2 font-bold">
+                        Email
+                        <input type="text" class="grow" placeholder="" />
+                      </label>
+
+                      <a href="succes.html">
+                        <button class="btn btn-primary h-14 rounded-xl text-white btn-wide w-[430px] bg-[#1DD100]">Continue</button>
+                    </a>
+                    
+
+                      <div class="flex gap-24">
+                        <p>Terms and Conditions</p>
+                       
+                        <p>Cancellation Policy</p>
+                      
+                      </div>
+                     
+                     
+                   </div>
+
+                  </div>
+                    
+              </div>
+            
+          
+           </div>
+
+          
+        </section>
+    </main>
+  <footer id="footer-section" class="footer bg-neutral text-neutral-content p-10 pl-32">
+    <aside class="space-y-5">
+      <h1 class="font-extrabold text-3xl">Easy-Ticket</h1>
+      <p>
+        P-Ticket is a digital platform to make your <br> daily commuting better.
+    </p>
+    <p class="text-[#FFFFFFB2]">@all rights reserved, P-Ticket services limited.2024</p>
+       
+    
+    </aside>
+    <nav>
+      <h6 class="text-xl text-white">Download Our App</h6>
+      <div class="grid grid-flow-col gap-4">
+       
+       
+        <a>
+         <img src="images/Group 104.png" alt="">
+        </a>
+      </div>
+      <div class="flex gap-6 mt-6">
+        <p>Terms & condition</p>
+        <p>Return & refund policy</p>
+        <p>Privacy policy</p>
+      </div>
+    </nav>
+  </footer>
+  <script src="script/script.js"></script>
+  <script src="script/another.js"></script>
+</body>
+</html>

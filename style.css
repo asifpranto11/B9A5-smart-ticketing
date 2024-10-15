@@ -1,0 +1,19 @@
+ /*.image-container {
+    position: relative; /* This sets the container as the reference point */
+    width: 400px; /* Adjust width as needed */
+    height: 100px; /* Adjust height based on your image size */
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+}
+
+.text-overlay {
+    position: absolute; /* Positions the text relative to its nearest positioned ancestor */
+    top: 50%; /* Centers the text vertically */
+    left: 50%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the text position to the exact center */
+    color: white; /* Text color, you can change this as needed */
+    text-align: center; /* Center-aligns the text */
+    /* Optional: adds a semi-transparent background to the text */
+    padding: 10px; /* Adds some space around the text */
+    border-radius: 5px; /* Rounds the corners of the text background */*/
+}
